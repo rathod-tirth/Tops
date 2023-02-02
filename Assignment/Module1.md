@@ -1,19 +1,25 @@
 # Module 1 (Overview of IT Industry)
 
 ### **1. What is software?**
-    Software is a set of instructions, data or programs used to operate computers and execute specific tasks. It is 
-    the opposite of hardware, which describes the physical aspects of a computer. Software is a generic term used to 
-    refer to applications, scripts and programs that run on a device. It can be thought of as the variable part of a 
-    computer, while hardware is the invariable part.
+    Software is a set of instructions, data or programs used to operate computers and execute specific tasks. It is the opposite of hardware, 
+    which describes the physical aspects of a computer. Software is a generic term used to refer to applications, scripts and programs that run 
+    on a device. It can be thought of as the variable part of a computer, while hardware is the invariable part.
 
 ### **2. Types of software.**
-    The two main categories of software are application software and system software. An application is software that fulfills a specific need or performs tasks. System software is designed to run a computer's hardware and provides a platform for applications to run on top of.
+    The two main categories of software are application software and system software. An application is software that fulfills a specific need 
+    or performs tasks. System software is designed to run a computer's hardware and provides a platform for applications to run on top of.
 
 ### **3. What is Software Development Methodology?**
-    A software development methodology is a process by which developers design, implement and test new computer programs. Following a methodology benefits developers because these processes lay out a structured sequence of steps that guide professionals through each stage of development. Additionally, development methodologies often follow a design philosophy, which can help developers align their process and the product's features with its functional goals. For example, the developer may define what the software product does and what problems it solves for users as part of their design philosophy.
+    A software development methodology is a process by which developers design, implement and test new computer programs. Following a 
+    methodology benefits developers because these processes lay out a structured sequence of steps that guide professionals through each stage 
+    of development. Additionally, development methodologies often follow a design philosophy, which can help developers align their process and 
+    the product's features with its functional goals. For example, the developer may define what the software product does and what problems it 
+    solves for users as part of their design philosophy.
 
 ### **4. What is Design Pattern?**
-    Design patterns represent the best practices used by experienced object-oriented software developers. Design patterns are solutions to general problems that software developers faced during software development. These solutions were obtained by trial and error by numerous software developers over quite a substantial period of time.
+    Design patterns represent the best practices used by experienced object-oriented software developers. Design patterns are solutions to 
+    general problems that software developers faced during software development. These solutions were obtained by trial and error by numerous 
+    software developers over quite a substantial period of time.
 
 ## **Intermediate**
 
@@ -38,11 +44,16 @@
     8. Isn't needed for the system to funtion
 
 ### **2. Explain the SDLC. Each phase process.**
-    Software Development is the development of software for distinct purposes. For software development, there is a specific programming language like Java, Python, C/C++, etc. The entire process of software development isn’t as simple as its definition, it’s a complicated process. Accordingly, it requires an efficient approach from the developer in the form of the Software Development Life Cycle (SDLC). 
+    Software Development is the development of software for distinct purposes. For software development, there is a specific programming 
+    language like Java, Python, C/C++, etc. The entire process of software development isn’t as simple as its definition, it’s a complicated 
+    process. Accordingly, it requires an efficient approach from the developer in the form of the Software Development Life Cycle (SDLC). 
 
-    Proper planning and execution are the key components of a successful software development process. The entire software development process includes 6 stages. Software Development Life Cycle (SDLC) is the common term to summarize these 6 stages. 
+    Proper planning and execution are the key components of a successful software development process. The entire software development process 
+    includes 6 stages. Software Development Life Cycle (SDLC) is the common term to summarize these 6 stages. 
 
-    SDLC specifies the task(s) to be performed at various stages by a software engineer/developer. It ensures that the end product is able to meet the customer’s expectations and fits in the overall budget. Hence, it’s vital for a software developer to have prior knowledge of this software development process.
+    SDLC specifies the task(s) to be performed at various stages by a software engineer/developer. It ensures that the end product is able to 
+    meet the customer’s expectations and fits in the overall budget. Hence, it’s vital for a software developer to have prior knowledge of this 
+    software development process.
 
 -> These 6 stages are discussed below. 
 
