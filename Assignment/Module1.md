@@ -26,13 +26,11 @@ The benefits span the organization, including:
 The IT landscape is constantly evolving. As advancements like cloud, microservices, and infrastructure as code (IaC) become more ubiquitous, IT teams are even better positioned to help organizations embrace innovation and meet customer needs.
 
 ## **What are the different types of IT?**
----
 IT can take the form of any technology that teams within an organization use to get their work done. That includes hardware, software, and computer systems — as well as the infrastructure (networks, data storage, memory, etc.) needed to maintain those systems.
 
 Organizational structures differ depending on the needs of the company. Common functional areas include application development, infrastructure and network administration, user support and productivity, security, and business operations.
 
 ## **Application development**
----
 Application development and maintenance involves building, managing, and upgrading all of the software applications that the business uses. These may include:
 
 - Enterprise Resource Planning (ERP) tools for storing data, generating reports, controlling user permissions, and managing workflows.
@@ -48,7 +46,6 @@ Application development and maintenance involves building, managing, and upgradi
 - Budgeting, legal, and accounting tools to manage resources and finances.
 
 ## **Infrastructure and network administration**
----
 A company’s infrastructure and network administration includes its hardware, networks, and any components needed to manage and deliver IT systems. Until the early 2010s, most companies purchased expensive network and infrastructure hardware. Today, infrastructure as a service (IaaS) gives companies access to once expensive infrastructure through an as-needed subscription-based model. Infrastructure IT typically includes:
 
 - Equipment such as computers, printers, and routers.
@@ -60,7 +57,6 @@ A company’s infrastructure and network administration includes its hardware, n
 - Data centers for data storage, backup, and recovery.
 
 ## **User support and productivity**
----
 IT teams support internal and external customers and troubleshoot issues. They also help facilitate cross-functional collaboration and employee productivity. Technology includes:
 
 - Communication and meeting tools to support teamwork, including web-conferencing tools for employees who work remotely.
@@ -72,7 +68,6 @@ IT teams support internal and external customers and troubleshoot issues. They a
 - Project management tools to organize work, document progress, and manage tasks.
 
 ## **Security and compliance**
----
 As an organization's digital footprint grows, so does its attack surface. Security and compliance teams protect business and customer data, while ensuring that the organization complies with security regulations. Security systems and tools include:
 
 - Documentation and storage software to comply with privacy laws and safeguard sensitive information.
@@ -82,7 +77,6 @@ As an organization's digital footprint grows, so does its attack surface. Securi
 - Antivirus software to protect the organization from viruses and other damaging malware.
 
 ## **Business operations**
----
 Effective IT departments see themselves as strategic partners to the business. Business operations bridge the entire organization — this team or function helps align teams, recognize cross-functional dependencies, and introduce new strategic initiatives. They use business analysis (BA) tools, among others, to collect and analyze the organization's data, identify trends, and provide a future outlook
 
 IT informs the overall business strategy through well-planned IT roadmaps and helps shape customer and employee experiences. Great IT departments lead with their domain expertise and find ways to continually improve — enabling better systems, processes, and people.
