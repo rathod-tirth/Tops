@@ -1,20 +1,22 @@
 # Module 1 (Overview of IT Industry)
 
 ### **1. What is software?**
-    Software is a set of instructions, data or programs used to operate computers and execute specific tasks. It is 
-    the opposite of hardware, which describes the physical aspects of a computer. Software is a generic term used to 
+    Software is a set of instructions, data or programs used to operate computers and execute specific tasks. It is the opposite 
+    of hardware, which describes the physical aspects of a computer. Software is a generic term used to 
     refer to applications, scripts and programs that run on a device. It can be thought of as the variable part of a 
     computer, while hardware is the invariable part.
 
 ### **2. Types of software.**
-    The two main categories of software are application software and system software. An application is software that fulfills a specific need 
-    or performs tasks. System software is designed to run a computer's hardware and provides a platform for applications to run on top of.
+    The two main categories of software are application software and system software. An application is software 
+    that fulfills a specific need or performs tasks. System software is designed to run a computer's hardware and 
+    provides a platform for applications to run on top of.
 
 ### **3. What is Software Development Methodology?**
-    A software development methodology is a process by which developers design, implement and test new computer programs. Following a 
-    methodology benefits developers because these processes lay out a structured sequence of steps that guide professionals through each stage 
-    of development. Additionally, development methodologies often follow a design philosophy, which can help developers align their process and 
-    the product's features with its functional goals. For example, the developer may define what the software product does and what problems it 
+    A software development methodology is a process by which developers design, implement and test new computer 
+    programs. Following a methodology benefits developers because these processes lay out a structured sequence of 
+    steps that guide professionals through each stage of development. Additionally, development methodologies often 
+    follow a design philosophy, which can help developers align their process and the product's features with its 
+    functional goals. For example, the developer may define what the software product does and what problems it 
     solves for users as part of their design philosophy.
 
 ### **4. What is Design Pattern?**
