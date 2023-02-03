@@ -106,7 +106,10 @@
 
 ### **3. Create a DFD and FlowChart of Login Process of facebook.com.**
 
+### DFD of login process of facebook.com
+
 ![DFD of login process of facebook.com](https://www.researchgate.net/profile/Adriana-Iamnitchi/publication/275055538/figure/fig1/AS:391771919011863@1470417113214/Data-flow-in-a-Facebook-application.png)
 
-![Start->Enter www.facebook.com->Facebook home page->Enter Email ID and password->Is email ID and password correct?->Yes/No->Display account/log in error->Stop](https://dyclassroom.com/image/topic/flowchart/flowchart-ex1-q4.png)
+### Flowchart of login process of facebook.com
 
+![Start->Enter www.facebook.com->Facebook home page->Enter Email ID and password->Is email ID and password correct?->Yes/No->Display account/log in error->Stop](https://dyclassroom.com/image/topic/flowchart/flowchart-ex1-q4.png)
