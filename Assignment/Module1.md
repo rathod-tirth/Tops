@@ -108,7 +108,7 @@
 
 ### DFD of login process of facebook.com
 
-![DFD of login process of facebook.com](file:///C:/Users/tirth/Downloads/Data-flow-in-a-Facebook-application.png)
+![DFD of login process of facebook.com](https://www.inettutor.com/wp-content/uploads/2018/11/DFD-Explosion-Online-Registration-of-Social-Networking-Application.png?ezimgfmt=rs:340x297/rscb11/ngcb11/notWebP)
 
 ### Flowchart of login process of facebook.com
 
