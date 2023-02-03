@@ -108,7 +108,7 @@
 
 ### DFD of login process of facebook.com
 
-![DFD of login process of facebook.com](https://www.researchgate.net/profile/Adriana-Iamnitchi/publication/275055538/figure/fig1/AS:391771919011863@1470417113214/Data-flow-in-a-Facebook-application.png)
+![DFD of login process of facebook.com](file:///C:/Users/tirth/Downloads/Data-flow-in-a-Facebook-application.png)
 
 ### Flowchart of login process of facebook.com
 
