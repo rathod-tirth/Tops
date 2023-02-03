@@ -8,8 +8,8 @@
 
 ### **2. Types of software.**
     The two main categories of software are application software and system software. An application is software that fulfills a
-    specific need or performs tasks. System software is designed to run a computer's hardware and provides a platform for 
-    applications to run on top of.
+    specific need or performs tasks. System software is designed to run a computer's hardware and provides a platform for applications 
+    to run on top of.
 
 ### **3. What is Software Development Methodology?**
     A software development methodology is a process by which developers design, implement and test new computer programs. 
