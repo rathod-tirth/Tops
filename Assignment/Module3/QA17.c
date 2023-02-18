@@ -1,8 +1,28 @@
-// Add, Sub, Mult, Div using switch
+// calc using func
 
 #include <stdio.h>
 
-int main()
+void add(float a, float b)
+{
+	printf("Addition : %.0f + %.0f = %.0f",a,b,a+b);
+}
+
+void sub(float a, float b)
+{
+	printf("Subtraction : %.0f - %.0f = %.0f",a,b,a-b);
+}
+
+void multi(float a, float b)
+{
+	printf("Multiplication : %.0f * %.0f = %.0f",a,b,a*b);
+}
+
+void div(float a, float b)
+{
+	printf("Division : %.1f / %.1f = %.2f",a,b,a/b);
+}
+
+void main()
 
 {
 	int choice;
@@ -27,19 +47,19 @@ int main()
 	switch(choice)
 	{
 		case 1:
-			printf("Addition : %.0f + %.0f = %.0f",a,b,a+b);
+			add(a,b);
 			break;
 			
 		case 2:
-			printf("Subtraction : %.0f - %.0f = %.0f",a,b,a-b);
+			sub(a,b);
 			break;
 			
 		case 3:
-			printf("Multiplication : %.0f * %.0f = %.0f",a,b,a*b);
+			multi(a,b);
 			break;
 			
 		case 4:
-			printf("Division : %.1f / %.1f = %.2f",a,b,a/b);
+			div(a,b);
 			break;
 			
 		default :
@@ -47,7 +67,6 @@ int main()
 			break;
 	}
 	
-	return 0;
 }
 
 
