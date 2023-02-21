@@ -1,85 +1,85 @@
+// Food bill
+
 #include <stdio.h>
 
-void x()
+void main()
 {
-	int choice,total=0,a,piz,bur,dsa,dli;
+	int pizza=180, burger=100, dosa=120, idli=50;				//	Product pricing
 	
-	printf("------------Menu-----------------\n\n");
-	printf("1. Pizza\tprice = 180rs/pcs\n");
-	printf("2. Burger\tprice = 100rs/pcs\n");
-	printf("3. Dosa\t\tprice = 120rs/pcs\n");
-	printf("4. Idli\t\tprice = 50rs/pcs\n");
+	int grass, quant, amo, total=0;
+	char y='y';
 	
-	printf("\nEnter Your choice : ");
-	scanf("%d",&choice);
-	
-	switch (choice)
+	while(y=='y')												//	looping for more orders
 	{
-		case 1:
-			printf("Enter Quantity : ");
-			scanf("%d",&piz);
-			
-			a=piz*180;
-			printf("\nAmount = %d",a);
-			
-			total=a+total;
-			break;
-			
-		case 2:
-			printf("Enter Quantity : ");
-			scanf("%d",&bur);
-			
-			a=bur*100;
-			printf("\nAmount = %d",a);
-			
-			total=a+total;
-			break;
-			
-		case 3:
-			printf("Enter Quantity : ");
-			scanf("%d",&dsa);
-			
-			a=dsa*120;
-			printf("\nAmount = %d",a);
-			
-			total=a;
-			break;
-			
-		case 4:
-			printf("Enter Quantity : ");
-			scanf("%d",&dli);
-			
-			a=dli*50;
-			printf("\nAmount = %d",a);
-			
-			total=a+total;
-			break;
 		
-		default :
-			printf("\nWRONG INPUT\n");
-			break;
+		printf("\n\n---------------Menu---------------\n\n");	//	Menu
+		printf(" 1. Pizza\tprice = %drs/pcs\n",pizza);
+		printf(" 2. Burger\tprice = %drs/pcs\n",burger);
+		printf(" 3. Dosa\tprice = %drs/pcs\n",dosa);
+		printf(" 4. Idli\tprice = %drs/pcs\n\n",idli);
+		printf("----------------------------------\n\n");
+		
+		printf(" Enter your choice : ");							//	choice
+		scanf("%d",&grass);
+		
+		switch(grass)
+		{
+			case 1:
+				printf("\n>> You have selected Pizza.\n\n");		//	for pizza
+				
+				printf(" Enter Quantity : ");
+				scanf("%d",&quant);
+				
+				amo=quant*pizza;
+				break;
+				
+			case 2:
+				printf("\n>> You have selected Burger.\n\n");		//	for burger
+				
+				printf(" Enter Quantity : ");
+				scanf("%d",&quant);
+				
+				amo=quant*burger;
+				break;
+				
+			case 3:
+				printf("\n>> You have selected Dosa.\n\n");			//	for dosa
+				
+				printf(" Enter Quantity : ");
+				scanf("%d",&quant);
+				
+				amo=quant*dosa;
+				break;
+				
+			case 4:
+				printf("\n>> You have selected Idli.\n\n");			//	for idli
+				
+				printf(" Enter Quantity : ");
+				scanf("%d",&quant);
+				
+				amo=quant*idli;
+				break;
+				
+			default :
+				printf("\n>> Coming soon\n\n");
+				break;		
+		}
+		
+		printf(" Amount = %d\n",amo);							//	Amount for each item
+		total+=amo;
+		
+		printf(" Total = %d\n\n",total);							//	Grand total
+		
+		printf(">> Do you want to place more order? y/n : ");		//	for placing more orders
+		scanf("%s",&y);
+	
+		if(y!='y')												//	if user enters wrong input
+		{
+			printf("\n>> Your Total = %d\n",total);
+		}		
 	}
-	printf("\n\nYour Total is %d\n",total);
 }
 
-int main()
-
-{	
-	x();
-	
-	int i;
-	char yn='n';
-	
-	do
-	{
-		printf("Do you want to place more order? y/n : ");
-		scanf("%s",yn);
-		
-		i++;
-	}	while(yn!='n');
-	
-	return 0;
-}
 
 
 
