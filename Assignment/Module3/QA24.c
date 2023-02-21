@@ -1,39 +1,33 @@
-// Reverse of string using recrusive function
+// Identify the number is palidrome or not using recursive func
 
 #include <stdio.h>
-#include <string.h>
-
-void reve(char str[])
-{
-	static int z, i, len, temp;
-	
-	len=strlen(str);
-	
-	z=len-1;
-	
-	if(i<len/2)
-	{
-		temp=str[i];
-		str[i]=str[z-i];
-		str[z-i]=temp;
-		
-		i++;
-		
-		reve(str);
-	}
-}
 
 void main()
 
 {
-	char str[100];
+	int a, b=0, c=0, z;
 	
-	printf("Enter a sentence : ");
-	gets(str);
+	printf("Enter any no. : ");
+	scanf("%d",&a);
 	
-	reve(str);
+	z=a;
 	
-	printf("Reverse = %s", str);
+	while(a>0)
+	{
+		c = a%10;
+		b = b*10+c;
+		a = a/10;
+	}
+	
+	printf("Reverse = %d\n",b);
+	
+	if(z==b)
+	{
+		printf("Number is palidrome");
+	}	else
+	{
+		printf("Number is not palidrome");
+	}
 }
 
 
