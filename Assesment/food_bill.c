@@ -5,7 +5,6 @@
 void main()
 {
 
-
 	int pizza=180, burger=100, dosa=120, idli=50;	//	Product pricing				
 	
 	int grass, quant, amo, total=0;
