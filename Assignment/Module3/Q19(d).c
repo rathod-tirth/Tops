@@ -5,16 +5,16 @@
 int main()
 
 {
-	int i, a, f=1;
+	int i, a;
 	
 	printf("Enter any no. : ");
 	scanf("%d",&a);
 	
-	for(i=a; i>0; i--)
+	for(i=a-1; i>0; i--)
 	{
-		f=f*i;
+		a*=i;
 	}
-	printf("Factorial of %d : %d",a,f);
+	printf("Factorial : %d",a);
 	
 	return 0;
 }
