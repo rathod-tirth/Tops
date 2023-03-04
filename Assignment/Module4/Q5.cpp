@@ -7,57 +7,88 @@ class A
 {
     public:
 
-    string name, type;
-    int num, amo, choice, depo, with;
+    string name, name2, type;
+    long long num, num2, amo=1000000; 
+    int choice,depo,with;
 
     void get()
     {
-        name="Tirth";
-        type="Saving";
-        num=32468447;
-        amo=1000000;
-        // cout<<"\n\n----------Money Bank-----------\n\n";
+        cout<<"\n\n----------Money Bank-----------\n\n";
+        cout<<"\n\n---------Registration----------\n\n";
         
-        // cout<<"Enter Name of the Depositor : ";
-        // cin>>name;
+        cout<<"Enter Name : ";
+        cin>>name;
 
-        // cout<<"Enter Account no. : ";
-        // cin>>num;
+        cout<<"Enter Account no. : ";
+        cin>>num;
 
-        // cout<<"\nType of Account : \n1. Saving Account\n2. Current Account\n3. Salary Account\n\nEnter : ";
-        // cin>>type;
+        cout<<"Enter Account Type : ";
+        cin>>type;
 
-        // cout<<"Enter Total Balance in Account : ";
-        // cin>>amo;
+        cout<<"Enter Total Amount : ";
+        cin>>amo;
     }
 
-    void set()
+    void login()
     {
-        cout<<"\n\n1. To Deposit an amount\n2. To check balance\n3. To Withdraw\nEnter your choice :";
-        cin>>choice;
+        cout<<"\n\n---------Login Page----------\n\n";
+        cout<<"Enter Name : ";
+        cin>>name2;
 
-        switch (choice)
+        cout<<"Enter Account no. : ";
+        cin>>num2;
+
+        if (name2==name && num2==num)
         {
-        case 1:
-            cout<<"\nEnter amount you want to deposit : ";
-            cin>>depo;
-            break;
-        
-        case 2:
-            cout<<endl<<name<<endl;
-            cout<<"Your Balance : "<<amo;
-            break;
+            cout<<endl<<endl;
+                
+            cout<<"1. To Check Balance\n";
+            cout<<"2. To Deposit an amount\n";
+            cout<<"3. To check balance and Withdraw an amount\n";
+            
+            cout<<"Enter your choice : ";
+            cin>>choice;
+            
+            cout<<endl;
 
-        case 3:
-            cout<<"\n Your Balance : \n"<<amo;
-            cout<<"How Much would you like to withdraw : ";
-            cin>>with;
-            break;
-        
-        default:
-            cout<<"\nWrong Input\n";
-            break;
+            switch (choice)
+            {
+            case 1:
+                cout<<"Your Balance : "<<amo;
+                break;
+
+            case 2:
+                cout<<"Enter an Amount : ";
+                cin>>depo;
+                amo+=depo;
+                
+                cout<<"\nTranscation Successful\n";
+                cout<<"Your Balance : "<<amo;
+
+                break;
+
+            case 3:
+                cout<<"Your Balance : "<<amo<<endl;
+                
+                cout<<"Enter an Amount :";
+                cin>>with;
+                amo-=with;
+
+                cout<<"\nTranscation Successful\n";
+                cout<<"Your Balance : "<<amo;
+
+                break;
+
+            default:
+                cout<<"\nWRONG INPUT\n";
+                break;
+            }
         }
+        else
+        {
+            cout<<"\nIncorrect Username or Account number\n";
+        }
+        
     }
 };
 
@@ -66,7 +97,7 @@ int main()
     A obj;
 
     obj.get();
-    obj.set();
+    obj.login();
 
     return 0;
 }
