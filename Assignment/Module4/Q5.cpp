@@ -29,6 +29,12 @@ class A
         cin>>amo;
     }
 
+};
+
+class B : public A
+{
+    public:
+
     void login()
     {
         cout<<"\n\n---------Login Page----------\n\n";
@@ -36,8 +42,17 @@ class A
         cin>>name2;
 
         cout<<"Enter Account no. : ";
-        cin>>num2;
+        cin>>num2;        
+    }
 
+};
+
+class C : public B
+{
+    public:
+
+    void set()
+    {
         if (name2==name && num2==num)
         {
             cout<<endl<<endl;
@@ -88,16 +103,17 @@ class A
         {
             cout<<"\nIncorrect Username or Account number\n";
         }
-        
+
     }
 };
 
 int main()
 {
-    A obj;
+    C obj;
 
     obj.get();
     obj.login();
+    obj.set();
 
     return 0;
 }
