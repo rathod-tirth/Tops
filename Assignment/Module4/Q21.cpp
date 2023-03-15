@@ -23,6 +23,12 @@ class Bank
 			acc[2]=11057073;
 			acc[3]=11057074;
 			acc[4]=11057075;
+			
+			bal[0]=2500000;
+			bal[1]=100000;
+			bal[2]=75000;
+			bal[3]=55000000;
+			bal[4]=6000;
 
 		}
 		
@@ -48,14 +54,7 @@ class Bank
 class Sav: public Bank
 {
 	public:
-		int depo,with;
-		
-		void get1()
-		{
-			bal[0]=2500000;
-			bal[1]=100000;
-			bal[2]=75000;
-		}
+		int ii,depo,with;
 		
 		void depo1(int c)
 		{
@@ -65,8 +64,12 @@ class Sav: public Bank
 			cout<<"Enter Amount to Deposit: ";
 			cin>>depo;
 			
+			ii=(depo/100)*2;
+			depo+=ii;
+			
 			bal[c]+=depo;
-			cout<<"\nYour Balance: "<<bal[c];
+			cout<<"\nYour Balance: "<<bal[c]<<endl;
+			cout<<"Interest: "<<ii<<endl;
 			
 		}
 		
@@ -89,21 +92,61 @@ class Sav: public Bank
 		}
 };
 
+class Cur: public Bank
+{
+	public:
+		int depo,with;
+		
+		void depo2(int c)
+		{
+			c=c-5;
+			cout<<"Your Balance: "<<bal[c]<<endl;
+			
+			cout<<"Enter Amount to Deposit: ";
+			cin>>depo;
+			
+			bal[c]+=depo;
+			
+			cout<<"\nYour Balance: "<<bal[c]<<endl;	
+		}
+		
+		void bal2(int c)
+		{
+			c=c-5;
+			cout<<"Your Balance: "<<bal[c]<<endl;
+		}
+		
+		void with2(int c)
+		{
+			c=c-5;
+			cout<<"Your Balance: "<<bal[c]<<endl;
+			
+			cout<<"Enter Amount to Withdraw: ";
+			cin>>with;
+			
+			bal[c]-=with;
+			
+			if(bal[c]<5000)
+			{
+				bal[c]-=500;
+				cout<<"Your Account is lower than Minimum Balance\n";
+				cout<<"Penalty = "<<500<<endl;
+			}
+			cout<<"\nYour Balance: "<<bal[c];
+		}
+};
+
 int main()
 {
-	int n=0, type, type1;
+	int n=0, type, type0;
 	
 	Bank ob;
 	ob.set();
 	
 	n=ob.check();
 	
-//	cout<<n-5;
-	
 	if(n>=5)
 	{
-//		cout<<"\nACCESS GRANTED\n\n";
-		
 		cout<<endl;
 		cout<<"1. Saving Account\n2. Current Account\n\n";
 		cout<<"Enter value: ";
@@ -112,29 +155,69 @@ int main()
 		switch(type)
 		{
 			case 1:
-				cout<<endl;
-				
-				Sav ob1;
-				ob1.get1();
-				
-				cout<<"1. Deposit Cash\n2. Check Balance\n3. Withdraw Cash\n\n";
-				cout<<"Enter value: ";
-				cin>>type1;
-				
-				switch(type1)
 				{
-					case 1:
-						ob1.depo1(n);
-						break;
+					cout<<endl;
 					
-					case 2:
-						ob1.bal1(n);
-						break;
+					Sav ob1;
+					ob1.set();
+					
+					cout<<"1. Deposit Cash\n2. Check Balance\n3. Withdraw Cash\n\n";
+					cout<<"Enter value: ";
+					cin>>type0;
+					
+					switch(type0)
+					{
+						case 1:
+							ob1.depo1(n);
+							break;
 						
-					case 3:
-						ob1.with1(n);
-						break; 
+						case 2:
+							ob1.bal1(n);
+							break;
+							
+						case 3:
+							ob1.with1(n);
+							break;
+							
+						default:
+							cout<<"\nWRONG INPUT\n";
+					}	
 				}
+				break;
+			
+			case 2:
+				{
+					cout<<endl;
+				
+					Cur ob2;
+					ob2.set();
+					
+					cout<<"1. Deposit Cash\n2. Check Balance\n3. Withdraw Cash\n\n";
+					cout<<"Enter value: ";
+					cin>>type0;
+					
+					switch(type0)
+					{
+						case 1:
+							ob2.depo2(n);
+							break;
+						
+						case 2:
+							ob2.bal2(n);
+							break;
+							
+						case 3:
+							ob2.with2(n);
+							break; 
+						
+						default:
+							cout<<"\nWRONG INPUT\n";
+					}
+				}
+				break;
+				
+			default:
+				cout<<"\nWRONG INPUT\n";
 		}
 	}
 	else
@@ -144,12 +227,3 @@ int main()
 	
 	return 0;
 }
-
-
-/*
-	bank= name, acc no., type, 
-	sav= bal, int, no cheque, 
-	cur= bal, no int, cheque, mim bal, penatly,
-	
-	task= deposits, display bal, calculate interest, withdraw, 
-*/
