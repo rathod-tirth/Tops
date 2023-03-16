@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int welcome()
+int welcome()	// Starter
 {
 	string name;
 		
@@ -27,6 +27,7 @@ class Price
 		
 		void price()
 		{
+			// pricing of the food items
 			pp1=150; pp2=100; pp3=200;	//	pizza pricing
 			bb1=100; bb2=200; bb3=50;	//	buger pricing
 			ss1=30; ss2=30; ss3=70;		//	sandwich pricing
@@ -48,6 +49,7 @@ class Bill: public Price
 			
 			switch(cc)
 			{
+				// Pizza
 				case 1:
 					{
 						cout<<"1) Italian Pizza Rs."<<pp1<<"\n2) Margerita Pizza Rs."<<pp2<<"\n3) Chicago Pizza Rs."<<pp3<<"\n\n";
@@ -92,6 +94,7 @@ class Bill: public Price
 					}
 					break;
 				
+				// Burger
 				case 2:
 					{
 						cout<<"1) Cheese Burger Rs."<<bb1<<"\n2) Chicken Burger Rs."<<bb2<<"\n3) Aloo Tikki Burger Rs."<<bb3<<"\n\n";
@@ -136,6 +139,7 @@ class Bill: public Price
 					}
 					break;
 				
+				// Sandwich
 				case 3:
 					{
 						cout<<"1) Aloo Mutter Sandwich Rs."<<ss1<<"\n2) Cheese Sandwich Rs."<<ss2<<"\n3) Grilled Sandwich Rs."<<ss3<<"\n\n";
@@ -179,7 +183,8 @@ class Bill: public Price
 						}
 					}
 					break;
-					
+				
+				// Roll	
 				case 4:
 					{
 						cout<<"1) Chinese Roll Rs."<<rr1<<"\n2) Cheese Roll Rs."<<rr2<<"\n3) Fried Roll Rs."<<rr3<<"\n\n";
@@ -223,7 +228,8 @@ class Bill: public Price
 						}
 					}
 					break;
-					
+				
+				// Biryani	
 				case 5:
 					{
 						cout<<"1) Veg. Biryani Rs."<<b1<<"\n2) Chicken Biryani Rs."<<b2<<"\n3) Hyderabad Biryani Rs."<<b3<<"\n\n";
@@ -291,7 +297,7 @@ int main()
 	while(h=='Y')
 	{
 		cout<<"\n\n----------Menu----------\n\n";
-		cout<<"1) Pizza\n2) Burger\n3) Sandwich\n4) Roll\n5) Biryani\n\n";	
+		cout<<"1) Pizza\n2) Burger\n3) Sandwich\n4) Roll\n5) Biryani\n\n";	// Menu
 		
 		total+=ob.bill();
 		
@@ -308,7 +314,7 @@ int main()
 		
 		if(h!='Y')
 		{
-			cout<<"\n\nTotal Bill = Rs. "<<total;
+			cout<<"\n\n>> Total Bill = Rs. "<<total;	// Grand Total
 		}
 	}	
 	return 0;
