@@ -31,7 +31,7 @@ class Price
 			bb1=100; bb2=200; bb3=50;	//	buger pricing
 			ss1=30; ss2=30; ss3=70;		//	sandwich pricing
 			rr1=50; rr2=50; rr3=25;		//	roll pricing
-			b1=70; b2=120; b3=100;		// biryani pricing
+			b1=70; b2=120; b3=100;		//	biryani pricing
 		}
 };
 
