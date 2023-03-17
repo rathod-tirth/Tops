@@ -1,20 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <style>
-        .one{
+        * {
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
             color: red;
+            background-color: royalblue;
+            padding: 10px;
+        }
+
+        .one {
+            color: red;
+        }
+
+        fieldset {
+            border: 0px;
+        }
+
+        .two {
+            text-align: right;
+            color: rgb(0, 0, 83);
         }
     </style>
 </head>
+
 <body>
-    <h3 style="text-align: center; color: red; background-color: royalblue;">Individual Registration</h3><br>
-    <form action="" style="background-color: rgb(155, 189, 252);">
-        <label for="" class="one">User Particulars</label>
-    </form>
+    <h1>Individual Registration</h1><br>
+    <fieldset style="background-color: rgb(155, 189, 252);">
+        <form action="">
+
+            <label for="" class="one">User Particulars</label><br><br>
+
+            <table align="center">
+                <tr>
+                    <td class="two"><label for="" class="one">*</label><label for="" >Login ID</label></td>
+                    <td><input type="text" name="" id="" required></td>
+                </tr>
+                <tr>
+                    <td class="two"><label for="" class="one">*</label><label for="">Password</label></td>
+                    <td><input type="password" name="" id="" required></td>
+                </tr>
+                <tr>
+                    <td class="two"><label for="" class="one">*</label><label for="">Confirm Password</label></td>
+                    <td><input type="password" name="" id="" required></td>
+                </tr>
+            </table><br>
+
+            <label for="" class="one">Personal Particulars</label><br><br>
+
+            <table border="" width="700">
+                <tr>
+                    <td class="two"><label for="" class="one">*</label>Salutation</td>
+                    <td class="two">
+                        <select name="" id="">
+                            <option value="" disabled selected>Select</option>
+                            <option value="">Mr.</option>
+                            <option value="">Mrs.</option>
+                            <option value="">Miss</option>
+                        </select>
+                    </td>
+                    <td class="two"><label for="" class="one">*</label>First Name</td>
+                    <td class="two"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
 </body>
+
 </html>
