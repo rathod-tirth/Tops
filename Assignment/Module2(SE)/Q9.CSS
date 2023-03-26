@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-family: verdana;
+    text-decoration: underline 4px aqua;
+}
+.one{
+    color: aquamarine;
+}
+.two{
+    color: coral;
+}
+.three{
+    color: deepskyblue;
+}
+.four{
+    color: indianred;
+}
