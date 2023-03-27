@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+a:hover{
+    color: salmon;
+}
+a:active{
+    color: lightseagreen;
+}
+a:focus{
+    border: 2px solid black;
+}
