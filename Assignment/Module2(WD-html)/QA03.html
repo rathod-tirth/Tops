@@ -4,141 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Header</title>
     <style>
         *{
             margin: 0;
             padding: 0;
-        }
-        body{
-            background-color: black;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 22px;
         }
         header{
-            display: flex;
             height: 100px;
-            /* background-color: black; */
-        }
-        .logo{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 20%;
-            height: inherit;
-            color: white;
-            font-size: 40px;
-            font-family: sans-serif;
-            font-weight: bold;
-        }
-        .nav{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 600px;
-        }
-        .nav a{
-            text-decoration: none;
-            color: white;
-            margin: 10px;
+            width: 100%;
+            background-color: aqua;
         }
         .main{
             display: flex;
+            height: 437px;
             width: 100%;
-            height: 600px;
-            margin-bottom: 20px;
         }
-        .word{
-            display: flex;
-            align-items: center;
-            width: 50%;
+        .left{
+            width: 350px;
             height: inherit;
+            background-color: royalblue;
         }
-        .small{
-            color: white;
-            font-size: 16px;
-            font-family: sans-serif;
-            margin: 10px;
-        }
-        .big{
-            font-style: normal;
-            font-size: 50px;
-            font-weight: bold;
-        }
-        img{
-            margin-left: 50px;
+        .right{
+            width: 80%;
+            height: inherit;
+            background-color: yellow;
         }
         footer{
-            display: flex;
-            height: 150px;
-            background-color: rgb(41, 41, 41);
-        }
-        .one{
-            width: 50%;
-            height: inherit;
-            display: flex;
-            align-items: center;
-        }
-        .game{
-            color: tomato;
-            font-size: 40px;
-            font-family: sans-serif;
-            font-weight: bold;
-            margin-left: 20px;
-        }
-        .ace{
-            font-style: normal;
-            color: white;
-        }
-        .two{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-            height: inherit;
-        }
-        .two a{
-            text-decoration: none;
-            color: white;
-            margin: 20px;
+            height: 100px;
+            width: 100%;
+            background-color: gray;
         }
     </style>
 </head>
 <body>
-    <!-- Header Start -->
-    <header>
-        <div class="logo">Asus</div>
-        <div class="nav">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Products</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
-        </div>
-    </header>
-    <!-- Header End -->
-    <!-- Body Start -->
+    <header>Header</header>
     <div class="main">
-        <div class="word">
-            <p class="small"><i class="big">ASUS ROG Strix G17</i><br><br>
-                Processor: AMD Ryzen 7 4800H Mobile Processor<br><br>
-                Memory: 16GB (8GB DDR4 SO-DIMM *2) DDR4 3200 MHz<br><br>
-                Storage: 1TB PCIe 3.0 NVMe M.2 SSD with additional 2x M.2 Slot for SSD Storage expansion <br><br>
-                Display: 17.3 inch (43.94 cms) FHD (1920 x 1080) 16:9 250nits, 144Hz Refresh Rate, vIPS-level Anti-glare display, Contrast Ratio: 1:1000 with Adaptive-Sync <br><br>
-                Graphics: NVIDIA GeForce RTX 3050 Ti 4GB GDDR6 VRAM with With ROG Boost up to 1795MHz at 80W (95W with Dynamic Boost)</p>
-        </div>
-        <img src="https://www.nicepng.com/png/full/430-4305889_laptop-asus-rog-png-asus-gl703vd-db74-17-3.png" alt="">
+        <div class="left">Left panel</div>
+        <div class="right">Body</div>
     </div>
-    <!-- Body End -->
-    <!-- Footer Start -->
-    <footer>
-        <div class="one"><p class="game"><i class="ace">Asus</i><br>Republic of Gamer</p></div>
-        <div class="two">
-            <a href="#">Contant Us</a>
-            <a href="#">Visit us</a>
-            <a href="#">About us</a>
-            <a href="#">Email us</a>
-            <a href="#">More</a>
-        </div>
-    </footer>
-    <!-- Footer End -->
+    <footer>Footer</footer>
 </body>
 </html>
