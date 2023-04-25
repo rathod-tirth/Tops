@@ -1,0 +1,5 @@
+Class Selector:
+
+A class selector is formatted as a period (.) character followed by the name of the class. It selects all 
+elements with that class attribute so that unique CSS declarations can be applied to those specific elements 
+without affecting other elements on the page.
