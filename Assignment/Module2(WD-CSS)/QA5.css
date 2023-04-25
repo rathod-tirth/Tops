@@ -1,0 +1,12 @@
+a{
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+a:link{
+    color: salmon;
+}
+a:visited{
+    color: hotpink;
+}
