@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: indianred;
+    font-size: 18px;
+    position: relative;
+}
+.bar1{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+.one{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+}
+.one:hover{
+    background-color: crimson;
+}
+.bar2{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: indianred;
+    list-style: none;
+}
+.drop1:hover .bar2{
+    display: block;
+}
+.bar3{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: indianred;
+    list-style: none;
+    top: 100px;
+    left: 200px;
+}
+.drop2:hover .bar3{
+    display: block;
+}
+.bar4{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: indianred;
+    list-style: none;
+    left: 200px;
+    top: 50px;
+}
+.drop3:hover .bar4{
+    display: block;
+}
