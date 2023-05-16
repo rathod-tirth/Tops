@@ -1,0 +1,5 @@
+    JavaScript (JS) is a high-level programming language known for its versatility and ability to add interactivity 
+to websites. It is primarily used for client-side web development, enabling dynamic content, event handling, and 
+manipulation of HTML and CSS. JS is supported by all major web browsers, making it widely accessible. It also has 
+a growing presence on the server-side with platforms like Node.js. Its object-oriented nature, extensive libraries, 
+and frameworks make it a popular choice for building modern web applications.
