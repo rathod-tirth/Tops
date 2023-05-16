@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undeclared and Undefined</title>
 </head>
+
 <body>
+    <script>
+        /** 1. Undeclared variables: An undeclared variable is a variable that has been used in the code without being declared or
+    defined using the "var", "let", or "const" keywords. When you attempt to use an undeclared variable, JavaScript will
+    throw a ReferenceError. It means that the variable has not been declared anywhere in the code. **/
+        // num=10;
+        console.log(num);
+
+        /** 2. Undefined variables: An undefined variable is a variable that has been declared but has not been assigned a value.
+    When you access an undefined variable, its value is "undefined." JavaScript assigns the "undefined" value to
+    variables by default if no explicit value has been assigned. **/
+        let name;
+        console.log(name); 
+    </script>
     
 </body>
+
 </html>
