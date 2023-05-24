@@ -1,29 +1,20 @@
-var fs = require("fs");
-console.log(" Writing into an file ");
+var fs=require("fs");
 
+// Writing the file
 // Sample.txt is an empty file
-fs.writeFile(
-    "sample.txt",
-    "Let's write a few sentences in the file",
-    function (err) {
-        if (err) {
+fs.writeFile("sample.txt","Let's write a few sentences in the file",function (err){
+    if (err) {
+        return console.error(err);
+    }
+
+    // Reading the file
+    fs.readFile("sample.txt",function (err,data) {
+        if(err){
             return console.error(err);
         }
-
-        // If no error the remaining code executes
-        console.log(" Finished writing ");
-        console.log("Reading the data that's written");
-
-        // Reading the file
-        fs.readFile("sample.txt", function (err, data) {
-            if (err) {
-                return console.error(err);
-            }
-            console.log("Data read : " + data.toString());
-
-        });
-    }
-);
+        console.log("Data = "+data.toString());
+    })
+})
 // use node.js to run the code
 
 /*  On the client side, you can’t read or write files in JavaScript browsers. The fs module in Node.js may 
