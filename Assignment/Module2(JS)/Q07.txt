@@ -1,0 +1,8 @@
+=> ViewState is used to store the state of an individual web page and its controls, typically within a hidden field on the
+page. It is used to maintain the values of controls across postbacks, allowing the page to remember user input and
+maintain its state.
+
+=> SessionState is used to store user-specific data across multiple requests and pages within a web
+application. It is stored on the server and associated with a specific user session. SessionState allows developers to
+maintain user-specific information, such as login credentials or shopping cart items, throughout their interaction with
+the application.
