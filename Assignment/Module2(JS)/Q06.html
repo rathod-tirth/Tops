@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+
+<body>
+    <button>Click</button>
+    <ul></ul>
+    <script>
+        const btn = document.querySelector("button");
+        const list = document.querySelector("ul");
+
+        btn.onclick = () => {
+            let li=document.createElement("li");
+            li.textContent="This is a list element";
+            list.append(li);
+        }
+        /* For adding new code dynamically we use createElement to create the element and append to attach
+        attach that element to the desire place */
+    </script>
+</body>
+
+</html>
