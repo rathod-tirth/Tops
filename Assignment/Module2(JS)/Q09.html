@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            color: green;
+            background-color: lightblue;
+        }
+        .two{
+            color: pink;
+            background-color: navy;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, unde placeat. Expedita, enim. Quia repudiandae
+        cumque in, ratione ipsam nostrum, eligendi corporis illum delectus quae, assumenda voluptatem culpa odio fugiat.
+    </p>
+    <button id="btn">Click</button>
+    <script>
+        const para=document.querySelector("p");
+        const btn=document.querySelector("#btn");
+
+        btn.onclick= () => {
+            para.className="two";
+        }
+    </script>
+</body>
+
+</html>
