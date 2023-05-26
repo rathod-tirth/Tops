@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+</head>
+<body>
+    <button id="alr">Alert</button>
+    <button id="conf">Confirm</button>
+    <button id="pro">Prompt</button>
+    <script>
+        // There are 3 types of pop-up boxes :
+
+        // 1. Alert
+        document.getElementById("alr").onclick=()=>{
+            alert("Alert Box");
+        }
+
+        // 2. Confirm
+        document.getElementById("conf").onclick=()=>{
+            confirm("Confirm Box");
+        }
+
+        // 3. Prompt
+        document.getElementById("pro").onclick=()=>{
+            prompt("Prompt Box","Default");
+        }
+    </script>
+</body>
+</html>
