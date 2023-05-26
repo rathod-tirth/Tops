@@ -4,20 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resize</title>
+    <title>Page Layout</title>
     <style>
         *{
             margin: 0;
             padding: 0;
         }
-        div{
+        .head{
+            width: 100wh;
+            height: 70px;
+            background-color: gray;
+            text-align: center;
+            border: 2px solid black;
+            /* margin: 10px; */
+        }
+        .nav{
+            width: 100wh;
+            height: 50px;
+            background-color: gray;
+            text-align: center;
+            border: 2px solid black;
+            /* margin: 10px; */
+        }
+        .main{
+            display: flex;
+            width: 100wh;
+            height: 400px;
+            text-align: center;
+        }
+        .main1{
+            width: 25%;
+            background-color: gray;
+            border: 2px solid black;
+            /* margin: 10px; */
+        }
+        .main2{
             width: 50%;
-            height: 70vh;
-            background-color: royalblue;
+            background-color: gray;
+            border: 2px solid black;
+            /* margin: 10px; */
+        }
+        .main3{
+            width: 25%;
+            background-color: gray;
+            border: 2px solid black;
+            /* margin: 10px; */
+        }
+        .footer{
+            width: 100wh;
+            height: 100px;
+            background-color: gray;
+            text-align: center;
+            border: 2px solid black;
+            /* margin: 10px; */
         }
     </style>
 </head>
 <body>
-    <div></div>
+    <div class="head">Header</div>
+    <div class="nav">Navigation</div>
+    <div class="main">
+        <div class="main1">Content</div>
+        <div class="main2">Main Content</div>
+        <div class="main3">Content</div>
+    </div>
+    <div class="footer">Footer</div>
 </body>
 </html>
