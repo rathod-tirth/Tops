@@ -1,0 +1,26 @@
+=> Disavantages of innerHTML in js :
+
+>> The use of innerHTML very slow: The process of using innerHTML is much slower as its contents as slowly built, 
+also already parsed contents and elements are also re-parsed which takes time.
+
+>> Preserves event handlers attached to any DOM elements: The event handlers do not get attached to the new 
+elements created by setting innerHTML automatically. To do so one has to keep track of the event handlers and 
+attach it to new elements manually. This may cause a memory leak on some browsers.
+
+>> Content is replaced everywhere: Either you add, append, delete or modify contents on a webpage using innerHTML, 
+all contents is replaced, also all the DOM nodes inside that element are reparsed and recreated.
+
+>> Appending to innerHTML is not supported: Usually, += is used for appending in JavaScript. But on appending to an 
+Html tag using innerHTML, the whole tag is re-parsed.
+
+>> Old content replaced issue: The old content is replaced even if object.innerHTML = object.innerHTML + ‘html’ is 
+used instead of object.innerHTML += ‘html’. There is no way of appending without reparsing the whole innerHTML. 
+Therefore, working with innerHTML becomes very slow. String concatenation just does not scale when dynamic DOM 
+elements need to be created as the plus’ and quote openings and closings becomes difficult to track.
+
+>> Can break the document: There is no proper validation provided by innerHTML, so any valid HTML code can be used. 
+This may break the document of JavaScript. Even broken HTML can be used, which may lead to unexpected problems.
+
+>> Can also be used for Cross-site Scripting(XSS): The fact that innerHTML can add text and elements to the webpage, 
+can easily be used by malicious users to manipulate and display undesirable or harmful elements within other HTML 
+element tags. Cross-site Scripting may also lead to loss, leak and change of sensitive information.
