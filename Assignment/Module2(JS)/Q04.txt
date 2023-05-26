@@ -1,2 +1,5 @@
-    JavaScript was initially developed by Brendan Eich at Netscape Communications Corporation (now Mozilla) in 
-just 10 days in May 1995. Netscape is the company that can be credited with the development of JavaScript.
+    JavaScript, often referred to as JS, was developed by Netscape Communications Corporation in the mid-1990s. 
+Brendan Eich, a programmer at Netscape, created JavaScript in just 10 days in September 1995. The initial 
+version of JavaScript was designed to add interactivity to web pages and was originally named "LiveScript." 
+However, due to the popularity of Java at the time, Netscape decided to rename it to JavaScript to capitalize 
+on the Java brand.
