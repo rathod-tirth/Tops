@@ -1,0 +1,6 @@
+>> The Bootstrap grid system is a fundamental part of the framework that allows developers to create responsive and adaptive layouts effortlessly. 
+It is based on a 12-column grid system, where the page layout is divided into horizontal columns. These columns can be combined and arranged to 
+create different responsive layouts for various screen sizes. By using pre-defined CSS classes, developers can easily specify the width and 
+positioning of elements within the grid, making it simple to achieve a desired layout. With the grid system's responsiveness, web pages built 
+with Bootstrap automatically adjust and reflow their content to fit different devices, ensuring optimal user experience across desktops, 
+tablets, and mobile devices. The grid system's flexibility and ease of use make it a popular choice for building responsive websites efficiently.

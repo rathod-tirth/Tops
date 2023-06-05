@@ -1,0 +1,24 @@
+Differences between Bootstrap 4 and Bootstrap 5:
+
+1. Smaller File Size: Bootstrap 5 has a smaller file size compared to Bootstrap 4. It achieved this by removing jQuery as a dependency and 
+rewriting the JavaScript components in vanilla JavaScript. This change reduces the overall footprint of Bootstrap and improves performance.
+
+2. New Utility Classes: Bootstrap 5 introduced a range of new utility classes, including spacing utilities (`m-*` and `p-*` classes) that 
+provide more granular control over margins and padding. Additionally, new utility classes like `gap-*` were added to control the spacing between 
+grid columns and rows.
+
+3. Updated Default Colors: Bootstrap 5 introduced a new and updated color palette with a fresh set of default colors. It offers a more modern 
+and refined look compared to the colors used in Bootstrap 4.
+
+4. Improved Grid System: While both versions use a 12-column grid system, Bootstrap 5 enhanced the grid system by introducing new classes like 
+`col-*`, `col-*-auto`, and `col-*-order-*`. These classes provide more flexibility in controlling the column widths, auto-sizing behavior, and 
+ordering of columns.
+
+5. Replaced Glyphicons: Bootstrap 5 removed Glyphicons, the icon font used in Bootstrap 4, and replaced it with the new `Bootstrap Icons` 
+library. This change provides a more extensive collection of icons designed specifically for Bootstrap.
+
+6. New Components: Bootstrap 5 introduced several new components, such as `Switches`, `Floating Labels`, and `Offcanvas` navigation. These new 
+components offer additional functionality and options for building modern web interfaces.
+
+7. Improved Documentation: The documentation for Bootstrap 5 has been revamped and expanded, providing more comprehensive and detailed guidance 
+for developers. It offers clearer explanations, updated examples, and improved searchability, making it easier to work with the framework.
