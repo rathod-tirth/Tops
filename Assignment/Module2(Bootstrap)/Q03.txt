@@ -1,0 +1,13 @@
+Here are the default Bootstrap text settings:
+
+1. Font Family: Arial, Helvetica, sans-serif.
+
+2. Font Size: The default font size for the body text is set to 1rem (16 pixels).
+
+3. Font Weight: The default font weight for the body text is normal (400).
+
+4. Line Height: Bootstrap sets the line height for the body text to 1.5.
+
+5. Text Color: The default text color for the body is usually set to the browser's default color, typically black or a dark gray shade.
+
+6. Text Alignment: By default, Bootstrap aligns the body text to the left (left-aligned).
