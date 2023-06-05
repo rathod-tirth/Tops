@@ -1,0 +1,8 @@
+>> Bootstrap's thumbnail component allows you to create a visually appealing grid of images or videos with accompanying 
+captions. 
+
+>> It provides a simple and elegant way to showcase a collection of media items in a responsive and organized manner, 
+enhancing the visual appeal and user experience of your website or application. With thumbnail components in 
+Bootstrap, you can easily create captivating and interactive galleries or portfolios.
+
+>> <img src="..." class="img-thumbnail" alt="...">
