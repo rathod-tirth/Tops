@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q01</title>
+</head>
+
+<body>
+    <label for="pass">Password</label>
+    <input type="password" name="pass" id="pass"> <button id="show">Show</button>
+    <script>
+        const pass = document.getElementById("pass"),
+            show = document.getElementById("show");
+
+        show.onclick = () => {
+            pass.type == "password" ? pass.type = "text" : pass.type = "password";
+        }
+    </script>
+</body>
+
+</html>

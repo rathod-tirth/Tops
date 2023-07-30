@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q02</title>
+</head>
+<body>
+    <div class="clickMe"></div>
+    <div class="clickMe"></div>
+    <div class="clickMe"></div>
+    <div class="clickMe"></div>
+    <button class="btn">CLICK ME!!</button>
+    <script>
+        const clickMe=document.getElementsByClassName("clickMe");
+        for(const ele of clickMe) {
+            ele.textContent="Click me!";
+        }
+
+        const btn=document.querySelector(".btn");
+        btn.onclick=()=>{
+            alert("You clicked the button!");
+        };
+    </script>
+</body>
+</html>
