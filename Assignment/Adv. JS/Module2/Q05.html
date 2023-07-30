@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q05</title>
 </head>
+
 <body>
     <script>
-        let salaries={
-            "John":100,
-            "Pete":300,
-            "Marry":250
+        let salaries = {
+            "John": 100,
+            "Pete": 300,
+            "Marry": 250
         };
-        let count=0;
+        let count = 0;
 
-        const sumSalaries=(val)=>{
+        const sumSalaries = (val) => {
             for (const sal of Object.values(val)) {
-                count+=sal;
+                count += sal;
             }
             return count;
         }
@@ -25,4 +27,5 @@
         alert(sumSalaries(salaries));
     </script>
 </body>
+
 </html>
