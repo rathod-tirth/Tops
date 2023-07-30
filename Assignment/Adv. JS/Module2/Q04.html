@@ -10,7 +10,18 @@
 <body>
     <script>
         let john = { name: "John", surname: "Smith", id: 1 },
-            pete = { name: "Pete", surname: "Hunt", id: 2 }
+            pete = { name: "Pete", surname: "Hunt", id: 2 },
+            marry = { name: "Marry", surname: "Key", id: 3 };
+        let users = [john, pete, marry];
+        let usersMapped=[];
+
+        users.forEach(val => {
+            usersMapped.push({ fullname: `${val.name} ${val.surname}`, id: val.id});
+        });
+        // console.log(usersMapped);
+
+        alert(usersMapped[0].id);
+        alert(usersMapped[0].fullname);
     </script>
 </body>
 

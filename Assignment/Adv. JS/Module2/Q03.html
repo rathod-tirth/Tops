@@ -11,7 +11,20 @@
     <script>
         let john = { name: "John", age: 25 }, pete = { name: "Pete", age: 30 }, marry = { name: "Marry", age: 28 };
         let users = [john, pete, marry];
-        let names = [users[0].name, users[1].name, users[2].name];
+        let names=[];
+        
+        users.forEach(element => {
+            names.push(element.name)
+        });
+        
+        // for (const val of users) {
+        //     names.push(val.name)
+        // }
+        
+        // users.map(val=>{
+        //     names.push(val.name);
+        // })
+        
         alert(names);
     </script>
 </body>
