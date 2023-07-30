@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q02</title>
+</head>
+<body>
+    <script>
+        let fruits = ["apple", "orange", "pear"];
+        let shoppingCart=fruits;
+        shoppingCart.push("banana");
+        
+        // since javascript is loosely typed language it updated both variable when you push a new value
+        console.log(fruits);
+
+        // length of both fruits and shoppingCart will be 4
+        alert(fruits.length);
+    </script>
+</body>
+</html>
