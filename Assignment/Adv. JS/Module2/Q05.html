@@ -12,6 +12,17 @@
             "Pete":300,
             "Marry":250
         };
+        let count=0;
+
+        const sumSalaries=(val)=>{
+            for (const sal of Object.values(val)) {
+                count+=sal;
+            }
+            return count;
+        }
+        // console.log(sumSalaries(salaries));
+
+        alert(sumSalaries(salaries));
     </script>
 </body>
 </html>
