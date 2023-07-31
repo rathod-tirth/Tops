@@ -9,11 +9,13 @@
 
 <body>
     <script>
+        // using arrow function
         const ask=(question,yes,no)=>{
             if(confirm(question)) yes();
             else no();
         }
 
+        // passing arrow function itself as a parameter
         ask("Do you agree?", ()=>{ alert("You agreed.") }, ()=>{ alert("You canceled.") });
     </script>
 </body>
