@@ -15,6 +15,7 @@
         let users = [john, pete, marry];
         let usersMapped=[];
 
+        // using forEach to push object type elements in userMapped array
         users.forEach(val => {
             usersMapped.push({ fullname: `${val.name} ${val.surname}`, id: val.id});
         });

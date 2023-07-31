@@ -17,7 +17,9 @@
         let count = 0;
 
         const sumSalaries = (val) => {
+            // using for of to loop over the object values with Object.values()
             for (const sal of Object.values(val)) {
+                // adding the values in count
                 count += sal;
             }
             return count;
