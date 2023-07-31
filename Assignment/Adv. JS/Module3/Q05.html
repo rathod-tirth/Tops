@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Q05</title>
+    <style>
+        .blur{
+            filter: blur(10px);
+        }
+        section{
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal{
+            position: relative;
+            border: 2px solid black;
+            padding: 30px;
+            background-color: lightgray;
+            z-index: 2;
+        }
+        .fa-circle-xmark{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+        .ok, .cancel{
+            margin-left: 22px;
+            background-color: white;
+            border-radius: 4px;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Click me</button>
+    <section>
+        <div class="modal">
+            <i class="fa-regular fa-circle-xmark" id="cross" style="color: #000000;"></i>
+            <p class="word">This is a modal box</p>
+            <button class="ok">OK</button>
+            <button class="cancel">Cancel</button>
+        </div>
+    </section>
+    <script>
+        const btn=document.querySelector("#btn");
+        const section=document.querySelector("section");
+        const cross=document.querySelector("#cross");
+        const ok=document.querySelector(".ok");
+        const cancel=document.querySelector(".cancel");
+
+        btn.onclick=()=>{
+            section.style.display="flex";
+        };
+
+        cross.onclick=()=>{
+            section.style.display="none";
+        };
+
+        ok.onclick=()=>{
+            section.style.display="none";
+        };
+
+        cancel.onclick=()=>{
+            section.style.display="none";
+        };
+    </script>
+</body>
+
+</html>
