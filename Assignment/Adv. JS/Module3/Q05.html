@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <title>Q05</title>
     <style>
-        .blur{
-            filter: blur(10px);
-        }
         section{
             display: none;
             justify-content: center;
@@ -39,11 +36,16 @@
 </head>
 
 <body>
+    <!-- button for triggering the modal -->
     <button id="btn">Click me</button>
+    <!-- modal -->
     <section>
         <div class="modal">
+            <!-- cross button -->
             <i class="fa-regular fa-circle-xmark" id="cross" style="color: #000000;"></i>
+            <!-- content -->
             <p class="word">This is a modal box</p>
+            <!-- ok and cancel button -->
             <button class="ok">OK</button>
             <button class="cancel">Cancel</button>
         </div>
@@ -55,20 +57,27 @@
         const ok=document.querySelector(".ok");
         const cancel=document.querySelector(".cancel");
 
+        // onclick the modal gets visible
         btn.onclick=()=>{
             section.style.display="flex";
         };
 
+        // this hides the modal and returns false
         cross.onclick=()=>{
             section.style.display="none";
+            return false;
         };
 
+        // this hides the modal and returns true
         ok.onclick=()=>{
             section.style.display="none";
+            return true;
         };
 
+        // this hides the modal and returns false
         cancel.onclick=()=>{
             section.style.display="none";
+            return false;
         };
     </script>
 </body>

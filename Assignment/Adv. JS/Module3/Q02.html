@@ -6,17 +6,21 @@
     <title>Q02</title>
 </head>
 <body>
+    <!-- empty classes -->
     <div class="clickMe"></div>
     <div class="clickMe"></div>
     <div class="clickMe"></div>
     <div class="clickMe"></div>
+    <!-- button for filling up the classes and for alert box -->
     <button class="btn">CLICK ME!!</button>
     <script>
+        // looping over classes and filling them up with for of loop
         const clickMe=document.getElementsByClassName("clickMe");
         for(const ele of clickMe) {
             ele.textContent="Click me!";
         }
 
+        // triggering alert box on the click of the button
         const btn=document.querySelector(".btn");
         btn.onclick=()=>{
             alert("You clicked the button!");

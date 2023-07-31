@@ -8,12 +8,14 @@
 </head>
 
 <body>
+    <!-- input password -->
     <label for="pass">Password</label>
-    <input type="password" name="pass" id="pass"> <button id="show">Show</button>
+    <input type="password" name="pass" id="pass"> <button id="show">Show</button> <!-- show password button -->
     <script>
         const pass = document.getElementById("pass"),
             show = document.getElementById("show");
 
+        // showing and hiding password onclick
         show.onclick = () => {
             pass.type == "password" ? pass.type = "text" : pass.type = "password";
         }

@@ -34,6 +34,7 @@
             margin-right: 20px;
         }
 
+        /* navbar class for mobile screen size */
         .navbar-vis {
             visibility: visible;
             position: absolute;
@@ -60,6 +61,7 @@
             color: slategray;
         }
 
+        /* hamburger button */
         .hamBtn {
             display: none;
             margin-right: 20px;
@@ -73,6 +75,7 @@
             margin: 5px;
         }
 
+        /* media query */
         @media (max-width:480px) {
             .navbar {
                 visibility: hidden;
@@ -90,30 +93,36 @@
 </head>
 
 <body>
+    <!-- header start -->
     <header>
         <nav class="title">Title</nav>
+        <!-- navbar elements -->
         <nav class="navbar">
             <a href="#">Home</a>
             <a href="#">Shop</a>
             <a href="#">About Me</a>
             <a href="#">Contact Us</a>
         </nav>
+        <!-- hamburger button -->
         <nav class="hamBtn">
             <span class="dash"></span>
             <span class="dash"></span>
             <span class="dash"></span>
         </nav>
     </header>
+    <!-- header end -->
     <script>
         const hamBtn = document.querySelector(".hamBtn");
         const navBar = document.querySelector(".navbar")
 
+        // onclick the navbar elements become visible on mobile screen size
         hamBtn.onclick = () => {
             if (navBar.style.visibility == "visible") {
                 navBar.style.visibility = "hidden";
             } else {
                 navBar.style.visibility = "visible";
             }
+            // adding css for mobile screen size on navbar
             navBar.classList.toggle("navbar-vis");
         };
     </script>

@@ -193,113 +193,94 @@
 
         const sub = document.getElementById("sub");
 
-        const fname = document.getElementById("firstName");
-        const fnameInvalid = document.getElementById("fname-invalid");
-        const fnameIcon = document.getElementById("fname-icon");
-        const lname = document.getElementById("lastName");
-        const lnameInvalid = document.getElementById("lname-invalid");
-        const lnameIcon = document.getElementById("lname-icon");
-        const email = document.getElementById("email");
-        const emailInvalid = document.getElementById("email-invalid");
-        const emailIcon = document.getElementById("email-icon");
-        const mob = document.getElementById("mob");
-        const mobInvalid = document.getElementById("mob-invalid");
-        const mobIcon = document.getElementById("mob-icon");
-        const pass = document.getElementById("pass");
-        const passInvalid = document.getElementById("pass-invalid");
-        const passIcon = document.getElementById("pass-icon");
-        const conPass = document.getElementById("con-pass");
-        const conPassInvalid = document.getElementById("con-pass-invalid");
-        const conPassIcon = document.getElementById("con-pass-icon");
+        const fname = [document.getElementById("firstName"), document.getElementById("fname-invalid"), document.getElementById("fname-icon")]
+        const lname = [document.getElementById("lastName"), document.getElementById("lname-invalid"), document.getElementById("lname-icon")];
+        const email = [document.getElementById("email"), document.getElementById("email-invalid"), document.getElementById("email-icon")];
+        const mob = [document.getElementById("mob"), document.getElementById("mob-invalid"), document.getElementById("mob-icon")];
+        const pass = [document.getElementById("pass"), document.getElementById("pass-invalid"), document.getElementById("pass-icon")];
+        const conPass = [document.getElementById("con-pass"), document.getElementById("con-pass-invalid"), document.getElementById("con-pass-icon")];
 
+        // function for putting the border
+        const wrong = (element) => {
+            element[1].classList.add("d-block");
+            element[0].classList.add("border-danger");
+            element[2].classList.add("border-danger");
+        };
+
+        // function for removing the border
+        const right = (element) => {
+            element[1].classList.remove("d-block");
+            element[0].classList.remove("border-danger");
+            element[2].classList.remove("border-danger");
+        };
+
+        // checking if the fields are correct or not and if not then giving them red border
         sub.onclick = () => {
-            if (fname.value == "") {
-                fnameInvalid.classList.add("d-block");
-                fname.classList.add("border-danger");
-                fnameIcon.classList.add("border-danger");
+            if (fname[0].value == "") {
+                wrong(fname);
                 return false;
             }
 
-            if (lname.value == "") {
-                lnameInvalid.classList.add("d-block");
-                lname.classList.add("border-danger");
-                lnameIcon.classList.add("border-danger");
-            }
-
-            if (email.value == "" || !email.value.match(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})+$/)) {
-                emailInvalid.classList.add("d-block");
-                email.classList.add("border-danger");
-                emailIcon.classList.add("border-danger");
+            if (lname[0].value == "") {
+                wrong(lname);
                 return false;
             }
 
-            if (mob.value == "" || mob.value.length != 10) {
-                mobInvalid.classList.add("d-block");
-                mob.classList.add("border-danger");
-                mobIcon.classList.add("border-danger");
+            if (email[0].value == "" || !email[0].value.match(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})+$/)) {
+                wrong(email);
                 return false;
             }
 
-            if (pass.value.length < 8 || pass.value.length > 16) {
-                passInvalid.classList.add("d-block");
-                pass.classList.add("border-danger");
-                passIcon.classList.add("border-danger");
+            if (mob[0].value == "" || mob[0].value.length != 10) {
+                wrong(mob);
                 return false;
             }
 
-            if (conPass.value != pass.value) {
-                conPassInvalid.classList.add("d-block");
-                conPass.classList.add("border-danger");
-                conPassIcon.classList.add("border-danger");
+            if (pass[0].value.length < 8 || pass[0].value.length > 16) {
+                wrong(pass);
+                return false;
+            }
+
+            if (conPass[0].value != pass[0].value) {
+                wrong(conPass);
                 return false;
             }
         }
 
-        fname.onkeyup = () => {
-            if (fname.value != "") {
-                fnameInvalid.classList.remove("d-block");
-                fname.classList.remove("border-danger");
-                fnameIcon.classList.remove("border-danger");
+        // if the field is in the correct form and there is a red border then this will remove the border
+        fname[0].onkeyup = () => {
+            if (fname[0].value != "") {
+                right(fname);
             }
         }
 
-        lname.onkeyup = () => {
-            if (lname.value != "") {
-                lnameInvalid.classList.remove("d-block");
-                lname.classList.remove("border-danger");
-                lnameIcon.classList.remove("border-danger");
+        lname[0].onkeyup = () => {
+            if (lname[0].value != "") {
+                right(lname);
             }
         }
 
-        email.onkeyup = () => {
-            if (email.value != "" && email.value.match(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})+$/)) {
-                emailInvalid.classList.remove("d-block");
-                email.classList.remove("border-danger");
-                emailIcon.classList.remove("border-danger");
+        email[0].onkeyup = () => {
+            if (email[0].value != "" && email[0].value.match(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})+$/)) {
+                right(email);
             }
         }
 
-        mob.onkeyup = () => {
-            if (mob.value != "" && mob.value.length == 10) {
-                mobInvalid.classList.remove("d-block");
-                mob.classList.remove("border-danger");
-                mobIcon.classList.remove("border-danger");
+        mob[0].onkeyup = () => {
+            if (mob[0].value != "" && mob[0].value.length == 10) {
+                right(mob);
             }
         }
 
-        pass.onkeyup = () => {
-            if (pass.value.length >= 8 && pass.value.length <= 16) {
-                passInvalid.classList.remove("d-block");
-                pass.classList.remove("border-danger");
-                passIcon.classList.remove("border-danger");
+        pass[0].onkeyup = () => {
+            if (pass[0].value.length >= 8 && pass[0].value.length <= 16) {
+                right(pass);
             }
         }
 
-        conPass.onkeyup = () => {
-            if (conPass.value == pass.value) {
-                conPassInvalid.classList.remove("d-block");
-                conPass.classList.remove("border-danger");
-                conPassIcon.classList.remove("border-danger");
+        conPass[0].onkeyup = () => {
+            if (conPass[0].value == pass[0].value) {
+                right(conPass);
             }
         }
 
