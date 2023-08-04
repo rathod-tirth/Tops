@@ -1,0 +1,20 @@
+>> JSON
+
+=> JSON stands for "JavaScript Object Notation," is a lightweight and widely used data interchange format. 
+It's designed to be easy for humans to read and write, and also easy for machines to parse and generate. JSON is 
+often used to transmit data between a server and a web application, but it's also used for configuration files, APIs, 
+and more.
+
+=> JSON is structured as a collection of key-value pairs.
+
+=> JSON supports various data types, including strings, numbers, booleans, null, objects, and arrays.
+
+{
+  "name": "Alice",
+  "age": 25,
+  "grades": [95, 88, 76],
+  "isStudent": true,
+  "address": null
+}
+
+JSON is relatively compact compared to other data formats, which makes it efficient for transmitting data over networks. 

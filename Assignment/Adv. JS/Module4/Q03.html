@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q03 Promises</title>
+</head>
+
+<body>
+    <script>
+        let condition = true;
+
+        // creating a Promise in myPromise variable
+        const myPromise = new Promise((resolve, reject) => {
+            if (condition) {
+                resolve("Condition is Satisfied");
+            } else {
+                reject("Condition is not satisfied");
+            }
+        })
+        .then(result=> console.log(result)) // if Promise is resolved
+        .catch(error=>console.log(error))   // if Promise is rejected
+        .finally(console.log("Condition has been made")); // contrary to Promise is resolved or rejected finally is called
+    </script>
+</body>
+
+</html>

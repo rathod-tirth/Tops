@@ -1,0 +1,19 @@
+>> Promises
+
+=> Promises are a programming concept used in asynchronous programming to handle the flow of operations that may not 
+complete immediately and could take some time to finish, such as fetching data from a server or reading a file from 
+disk. Promises help manage these asynchronous operations and make it easier to write code that handles their outcomes.
+
+=> In traditional callback-based asynchronous programming, managing multiple asynchronous operations and their errors 
+can become complex and lead to what's commonly referred to as "callback hell" or "pyramid of doom." Promises provide 
+a more structured and readable way to handle asynchronous tasks.
+
+=> It has three possible states:
+
+1. Pending: The initial state, indicating that the asynchronous operation is still ongoing and the final result is 
+not available yet.
+
+2. Fulfilled (Resolved): The state indicating that the asynchronous operation has completed successfully, and the 
+promised value is available.
+
+3. Rejected: The state indicating that the asynchronous operation has encountered an error or failed to complete.
