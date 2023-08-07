@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Foodie Dinning</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="container">
+            <!-- title -->
+            <h2 class="title">Foodie Dinning</h2>
+            <!-- form -->
+            <form method="post" class="form">
+                <!-- Choice -->
+                <select name="choice" class="input" id="choice">
+                    <option value="" selected disabled>Choice of Booking</option>
+                    <option value="" id="full">Full Day Booking</option>
+                    <option value="" id="half">Half Day Booking</option>
+                    <option value="" id="hour">Hourly Booking</option>
+                </select>
+                <!-- username, email, etc. -->
+                <input type="text" placeholder="Username" class="input">
+                <input type="email" placeholder="Email" class="input">
+                <input type="number" placeholder="Mobile" class="input" id="mob">
+                <input type="number" placeholder="No. of Person" class="input">
+                <!-- extra option -->
+                <div id="moreOption"></div>
+                <!-- submit -->
+                <input type="submit" class="button">
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
