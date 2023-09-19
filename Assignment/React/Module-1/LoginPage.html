@@ -9,16 +9,25 @@
 </head>
 
 <body>
+   <!-- main container -->
    <div class="container">
+      <!-- content -->
       <section class="wrapper">
+         <!-- heading -->
          <h2>Login Page</h2>
-         <input type="text" name="name" placeholder="Name" class="inp">
-         <input type="password" name="password" placeholder="Password" class="inp">
-         <span class="inline">
-            <label for="rembr"><input type="checkbox" name="rembr" id="rembr">Remember Me</label>
-            <a href="#">Frogot Password?</a>
-         </span>
-         <button>Login</button>
+         <form method="post">
+            <!-- name -->
+            <input type="text" name="name" placeholder="Name" class="inp">
+            <!-- password -->
+            <input type="password" name="password" placeholder="Password" class="inp">
+            <!-- other options -->
+            <span class="inline">
+               <label for="rembr"><input type="checkbox" name="rembr" id="rembr">Remember Me</label>
+               <a href="#">Frogot Password?</a>
+            </span>
+            <!-- submit button -->
+            <input type="submit" />
+         </form>
       </section>
    </div>
    </div>
