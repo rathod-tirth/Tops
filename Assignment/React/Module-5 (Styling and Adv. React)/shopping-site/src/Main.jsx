@@ -56,6 +56,7 @@ const Hero = styled.section`
    background-color: #051922AA;
    position: relative;
    padding: calc(50vh - 200px);
+   margin-top: 80px;
 
    &::before {
       position: absolute;

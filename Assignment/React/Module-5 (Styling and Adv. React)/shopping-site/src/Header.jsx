@@ -37,6 +37,9 @@ const Nav = styled.nav`
    color: white;
    justify-content: space-around;
    align-items: center;
+   position: fixed;
+   z-index: 2;
+   top: 0;
 `;
 
 const Logo = styled.a`
