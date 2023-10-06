@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { featureData } from "./data";
+import Product from "./Product";
 
 function Main() {
    return (
@@ -28,6 +29,7 @@ function Main() {
                      );
                   })}
                </Feature>
+               <Product />
             </div>
          </main>
       </>
