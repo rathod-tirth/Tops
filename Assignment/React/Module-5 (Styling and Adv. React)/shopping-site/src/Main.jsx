@@ -1,16 +1,33 @@
 import styled from "styled-components"
+import { featureData } from "./data";
 
 function Main() {
    return (
       <>
          <main>
-            <div className="container">
+            <div>
                <Hero>
                   <SubTitle>Fresh &amp; Organic</SubTitle>
                   <Tilte>Delicious Seasonal Fruits</Tilte>
                   <Btn>Fruit Collection</Btn>
                   <Btn>Contact Us</Btn>
                </Hero>
+               <Feature>
+                  {featureData.map((data) => {
+                     const { id, icon, title, text } = data;
+                     return (
+                        <section key={id}>
+                           <FWrapper>
+                              <FIcon className="feature-icon"><i className={icon} /></FIcon>
+                              <FText className="feature-text">
+                                 <h4>{title}</h4>
+                                 <p>{text}</p>
+                              </FText>
+                           </FWrapper>
+                        </section>
+                     );
+                  })}
+               </Feature>
             </div>
          </main>
       </>
@@ -69,5 +86,35 @@ const Hero = styled.section`
       background-size: cover;
       background-position: center;
       z-index: -2;
+   }
+`;
+
+const Feature = styled.section`
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 200px;
+   background-color: #f3f3f3;
+`;
+
+const FWrapper = styled.div`
+   display: flex;
+   align-items: center;
+`;
+
+const FIcon = styled.span`
+   color: orange;
+   border: 2px dotted orange;
+   border-radius: 50%;
+   padding: 0.8rem;
+   font-size: 1.2rem;
+`;
+
+const FText = styled.span`
+   margin-left: 0.8rem;
+   p {
+      font-size: 0.8rem;
+      color: gray;
+      margin-top: 0.2rem;
    }
 `;
