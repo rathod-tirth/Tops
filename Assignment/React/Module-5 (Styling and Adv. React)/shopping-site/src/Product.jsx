@@ -45,6 +45,23 @@ const Pro = styled.section`
 const PTitle = styled.section`
    text-align: center;
    margin: 5rem;
+   h1 {
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.3rem;
+      position: relative;
+   }
+
+   h1:after {
+   position: absolute;
+   content: '';
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   width: 50px;
+   height: 2px;
+   background-color: orange;
+   margin: 0 auto;
+}
 `;
 
 const PWrapper = styled.section`
