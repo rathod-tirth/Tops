@@ -20,13 +20,13 @@ function App() {
 
   const handleChange = (e) => {
     setValue(e.target.value);
+    fetch();
   };
 
   const handleSearch = (e) => {
     e.preventDefault();
-    fetch();
     if (value) {
-      const newData = data.filter((val) => !val.name.indexOf(value));
+      const newData = data.filter(val => val.name.includes(value));
       setData(newData);
     }
   };
@@ -36,9 +36,12 @@ function App() {
       <div className="container m-5">
         <h2>Search Data</h2>
         <br />
-        <div className="form-inline float-right m-2">
-          <input type="search" className="form-control" placeholder="Search Here" id="search" onChange={handleChange} />
-          <button type="submit" className="btn btn-primary" onClick={(e) => handleSearch(e)}><i className="fa-solid fa-magnifying-glass"></i></button>
+        <div>
+          <button className="float-left btn btn-primary m-1" onClick={fetch}><i className="fa-solid fa-rotate"></i></button>
+          <form className="form-inline float-right m-2">
+            <input type="search" className="form-control" placeholder="Search Here" id="search" onChange={handleChange} />
+            <button type="submit" className="btn btn-primary m-1" onClick={(e) => handleSearch(e)}><i className="fa-solid fa-magnifying-glass"></i></button>
+          </form>
         </div>
 
         <table className="table table-hover table-bordered">
@@ -58,9 +61,9 @@ function App() {
                   <td>{pro.price}</td>
                   <td>{pro.category}</td>
                   <td>
-                    <button className="btn btn-primary m-1">Read</button>
-                    <button className="btn btn-success m-1">Edit</button>
-                    <button className="btn btn-danger m-1">Delete</button>
+                    <button className="btn btn-primary m-1"><i className="fa-solid fa-eye"></i> Read</button>
+                    <button className="btn btn-success m-1"><i className="fa-solid fa-pen-to-square"></i> Edit</button>
+                    <button className="btn btn-danger m-1"><i className="fa-solid fa-xmark"></i> Delete</button>
                   </td>
                 </tr>
               );
