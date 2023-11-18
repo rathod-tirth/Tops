@@ -9,7 +9,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
+    // Routing
     <BrowserRouter>
+      {/* toast */}
       <ToastContainer></ToastContainer>
       <Routes>
         <Route path="/" element={<><Header /><Home /><Footer /></>}></Route>
