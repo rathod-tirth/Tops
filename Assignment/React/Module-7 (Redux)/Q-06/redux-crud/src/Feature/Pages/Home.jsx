@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux"
 
 function Home() {
+   // example of use of useSelector hook
    const { name } = useSelector((state) => state.user);
    return (
       <div>

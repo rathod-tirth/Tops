@@ -5,18 +5,23 @@ import { toast } from "react-toastify";
 import { deleteData, updateData } from "../action";
 
 function User() {
+   // using useDispatch to call the actions
    const dispatch = useDispatch();
 
+   // using useSelector hook to get access the state object values
    const { allUser, singleUser } = useSelector(state => state.user);
 
    useEffect(() => {
+      // calling the fetchUser action the initially fetch the given api data
       dispatch(fetchUser("http://localhost:3000/user"));
 
+      // condition to re-render the fetch data on change of singleUser state
       if (singleUser) {
          setFormValue(singleUser);
       }
    }, [singleUser])
 
+   // data delete
    const handleDelete = (id) => {
       dispatch(deleteData(`http://localhost:3000/user/${id}`))
       setTimeout(() => {
@@ -25,6 +30,7 @@ function User() {
       toast.success("Data Deleted");
    }
 
+   // form control
    const [formValue, setFormValue] = useState({
       id: "",
       name: "",
@@ -35,10 +41,12 @@ function User() {
 
    const { id, name, email, password, mobile } = formValue;
 
+   // fetching the single user data
    const handleUpdate = (id) => {
       dispatch(fetchSingleUser(`http://localhost:3000/user/${id}`));
    }
 
+   // form validation
    const validation = () => {
       let result = true;
       if (name === "") {
@@ -60,10 +68,12 @@ function User() {
       return result;
    };
 
+   // set the state data to form's data
    const handleChange = (e) => {
       setFormValue({ ...formValue, [e.target.name]: e.target.value });
    };
 
+   // updating the store data using the action
    const handleSubmit = (e) => {
       e.preventDefault();
       if (validation()) {
@@ -78,6 +88,7 @@ function User() {
 
    return (
       <div className="m-5 pt-5">
+         {/* TABLE */}
          <table className="table table-bordered table-hover">
             <thead className="thead-dark">
                <tr>

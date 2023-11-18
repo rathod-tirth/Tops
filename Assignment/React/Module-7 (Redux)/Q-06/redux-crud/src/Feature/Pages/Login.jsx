@@ -4,8 +4,10 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 function Login() {
+   // using useDispatch to call the actions
    const dispatch = useDispatch();
 
+   // form control
    const [formValue, setFormValue] = useState({
       id: "",
       name: "",
@@ -16,6 +18,7 @@ function Login() {
 
    const { name, email, password, mobile } = formValue;
 
+   // form validation
    const validation = () => {
       let result = true;
       if (name === "") {
@@ -41,9 +44,11 @@ function Login() {
       setFormValue({ ...formValue, id: new Date().getTime().toString().slice(9, 13), [e.target.name]: e.target.value });
    };
 
+   // adding new data on submit
    const handleSubmit = (e) => {
       e.preventDefault();
       if (validation()) {
+         // dispatch will call the insert action, which will add the given data
          dispatch(insert("http://localhost:3000/user", formValue));
          setFormValue({ id: "", name: "", email: "", password: "", mobile: "" });
          toast.success("Login Successfull");
@@ -52,6 +57,7 @@ function Login() {
 
    return (
       <div>
+         {/* LOGIN */}
          <div className="w3-container container" id="contact">
             <h3 className="w3-border-bottom w3-border-light-grey w3-padding-16">Login</h3>
             <form target="_blank">
