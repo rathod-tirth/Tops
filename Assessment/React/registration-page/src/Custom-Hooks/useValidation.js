@@ -1,5 +1,6 @@
 import { toast } from "react-toastify";
 
+// custom hook for form validation to ensure reusability of the validation and cleaner code quality
 const useValidation = (value) => {
 
    // Regex
