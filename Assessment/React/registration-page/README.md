@@ -15,31 +15,6 @@ This project is a React-based application designed to create a robust and user-f
 - **React**: Front-end JavaScript library for building user interfaces.
 - **HTML/CSS**: Structure and styling for the registration form.
 
-## Getting Started
-
-To run this project locally, follow these steps:
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone https://github.com/your-username/business-registration-form.git
-   ```
-
-2. **Install Dependencies**:
-
-   ```bash
-   cd business-registration-form
-   npm install
-   ```
-
-3. **Run the Application**:
-
-   ```bash
-   npm start
-   ```
-
-4. Access the application via `http://localhost:3000` in your web browser.
-
 ## Usage
 
 Customize the form fields, validation, and design according to your business requirements by editing the respective React components and stylesheets.
