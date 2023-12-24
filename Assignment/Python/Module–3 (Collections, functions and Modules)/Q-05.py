@@ -1,16 +1,21 @@
 # Q-05 Write a Python function to get the largest number, smallest num and sum of all from a list.
 
-li=[]
-total=0
+def list_function():
+    li=[]
+    total=0
 
-for i in range(5):
-    num= int(input("Enter a Number : "))
-    total+=num
-    li.append(num)
+    for i in range(1,6):
+        num=int(input(f"Enter Number {i} : "))
+        total+=num
+        li.append(num)
+        
+    li.sort()
+    small=li[0]
+    large=li[-1]
+    
+    return small,large,total
 
-li.sort()
-small=li[0]
-large=li[-1]
+small,large,total=list_function()
 
 print("Smallest Number :",small)
 print("Largest Number :",large)
