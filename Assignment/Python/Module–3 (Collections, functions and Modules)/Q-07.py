@@ -8,4 +8,4 @@ for i in li:
    if len(i)>2 and i[0]==i[-1]:
       count+=1
 
-print("Strings :",count)
+print("Strings with first and last character same :",count)
