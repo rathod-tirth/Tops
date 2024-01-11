@@ -1,6 +1,6 @@
 # Q-03 Write a Python program to append text to a file and display the text.
 
-file=open('Q-03.txt','a+')
+file=open('writefile.txt','a+')
 
 file.write("How are you doing?\n")
 file.write("Have a nice day.")
