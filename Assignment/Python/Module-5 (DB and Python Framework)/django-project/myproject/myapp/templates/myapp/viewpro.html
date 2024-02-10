@@ -1,0 +1,39 @@
+{% extends "myapp/index.html" %}
+
+{% block content %}
+   <section>
+      <div class="container m-5">
+         <h2 class="mb-5">View Product</h2>
+         <table class="table table-bordered table-hover">
+            <thead>
+               <tr>
+                  <th>No.</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Image</th>
+                  <th>Model</th>
+                  <th>Ram</th>
+                  <th>Action</th>
+               </tr>
+            </thead>
+            <tbody>
+               {% for i in productsubcat %}
+               <tr>
+                  <td>{{i.product_name.product_id}}</td>
+                  <td>{{i.product_name.product_name}}</td>
+                  <td>{{i.product_price}}</td>
+                  <td>{{i.image}}</td>
+                  <td>{{i.model}}</td>
+                  <td>{{i.ram}}</td>
+                  <td>
+                     <a class="btn btn-success text-white" href="{% url "editpro" k=i.product_name.product_id %}">Edit</a>
+                     <a class="btn btn-danger text-white" href="{% url "deletepro" k=i.product_name.product_id %}">Delete</a>
+                  </td>
+               </tr>
+               {% endfor %}
+            </tbody>
+         </table>
+         <a class="btn btn-success text-white" href="{% url "home" %}">Home</a>
+      </div>
+   </section>
+   {% endblock content %}

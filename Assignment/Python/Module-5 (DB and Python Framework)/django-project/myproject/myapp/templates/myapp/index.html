@@ -16,12 +16,12 @@
          <h2>Hello, {{user.name}}</h2>
          <div class="mt-3">
             <a href="{% url 'addpro' %}" class="btn btn-block btn-outline-primary">Add Product</a>
-            <a href="" class="btn btn-block btn-outline-primary">View Products</a>
+            <a href="{% url "viewpro" %}" class="btn btn-block btn-outline-primary">View Products</a>
          </div>
       </div>
    </section>
    {% endblock content %}
-   
+
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"></script>
