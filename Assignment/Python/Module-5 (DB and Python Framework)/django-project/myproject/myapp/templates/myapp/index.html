@@ -13,18 +13,24 @@
    {% block content %}
    <section>
       <div class="container content-center mt-5" style="width: 18rem;">
+         <!-- title -->
          <h2>Hello, {{user.name}}</h2>
+
+         <!-- buttons -->
          <div class="mt-3">
             {% if user.role == "Admin" %}
             <a href="{% url 'addpro' %}" class="btn btn-block btn-outline-primary">Add Product</a>
             {% endif %}
             <a href="{% url 'viewpro' %}" class="btn btn-block btn-outline-primary">View Products</a>
          </div>
+         <!-- ====== -->
       </div>
 
+      <!-- logout button -->
       <div class="container mt-5" style="width: 18rem;">
          <a href="{% url 'logout' %}" class="btn btn-block btn-primary">Logout</a>
       </div>
+      <!-- ========== -->
    </section>
    {% endblock content %}
 

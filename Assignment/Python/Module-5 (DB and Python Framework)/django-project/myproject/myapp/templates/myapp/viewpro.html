@@ -3,8 +3,12 @@
 {% block content %}
 <section>
    <div class="container m-5">
+      <!-- title -->
       <h2 class="mb-5">View Product</h2>
+
+      <!-- table -->
       <table class="table table-bordered table-hover">
+         <!-- table heading -->
          <thead>
             <tr>
                <th>No.</th>
@@ -16,6 +20,7 @@
                <th>Action</th>
             </tr>
          </thead>
+         <!-- table content -->
          <tbody>
             {% for i in productsubcat %}
             <tr>
@@ -40,6 +45,9 @@
             {% endfor %}
          </tbody>
       </table>
+      <!-- ================== -->
+
+      <!-- home button -->
       <a class="btn btn-success text-white" href="{% url 'home' %}">Home</a>
    </div>
 </section>

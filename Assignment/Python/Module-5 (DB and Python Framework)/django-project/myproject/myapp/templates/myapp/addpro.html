@@ -3,14 +3,18 @@
 {% block content %}
 <section>
    <div class="container m-5">
+      <!-- title -->
       <h2 class="mb-5">Add Product</h2>
+
+      <!-- alert message -->
       {% if msg %}
       <div class="alert alert-success">
          {{msg}}
       </div>
       {% endif %}
-      
-      <form method="post" action="{% url "addpro" %}" enctype="multipart/form-data">
+
+      <!-- form -->
+      <form method="post" action="{% url 'addpro' %}" enctype="multipart/form-data">
          {% csrf_token %}
          <!-- ***** Name ****** -->
          <div class="form-group">
@@ -34,9 +38,11 @@
             <input type="text" class="form-control" placeholder="Enter Product Ram" name="ram">
          </div>
 
+         <!-- ***** Buttons ***** -->
          <input type="submit" class="btn btn-primary text-white" value="Submit" />
-         <a class="btn btn-success text-white" href="{% url "home" %}">Home</a>
+         <a class="btn btn-success text-white" href="{% url 'home' %}">Home</a>
       </form>
+      <!-- ============ -->
    </div>
 </section>
 {% endblock content %}
