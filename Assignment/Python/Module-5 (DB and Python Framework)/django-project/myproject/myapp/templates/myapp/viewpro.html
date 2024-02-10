@@ -25,11 +25,17 @@
                <td><img src="{{i.image}}" alt="image"> </td>
                <td>{{i.model}}</td>
                <td>{{i.ram}}</td>
+               {% if user.role == "Admin" %}
                <td>
                   <a class="btn btn-success text-white" href="{% url 'editpro' k=i.product_name.product_id %}">Edit</a>
                   <a class="btn btn-danger text-white"
                      href="{% url 'deletepro' k=i.product_name.product_id %}">Delete</a>
                </td>
+               {% else %}
+               <td>
+                  None
+               </td>
+               {% endif %}
             </tr>
             {% endfor %}
          </tbody>

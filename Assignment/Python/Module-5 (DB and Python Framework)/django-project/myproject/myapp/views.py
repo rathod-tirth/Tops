@@ -55,8 +55,10 @@ def addpro(request):
    
 def viewpro(request):
    if 'name' in request.session:
+      user=User.objects.get(name=request.session['name'])
       productsubcat=ProductSubCat.objects.all()
-      context={'productsubcat':productsubcat}
+      context={'productsubcat':productsubcat,
+               'user':user}
       
       return render(request, 'myapp/viewpro.html', context)
    return redirect('login')
@@ -92,3 +94,9 @@ def deletepro(request,k):
       return redirect('viewpro')
    else:
       return redirect('login')
+
+def logout(request):
+   if 'name' in request.session:
+      del request.session['name']
+      
+   return redirect('login')
