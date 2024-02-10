@@ -52,3 +52,17 @@ def addpro(request):
          return render(request, 'myapp/addpro.html', context)
    else:
       return redirect('login')
+   
+def viewpro(request):
+   if 'name' in request.session:
+      productsubcat=ProductSubCat.objects.all()
+      context={'productsubcat':productsubcat}
+      
+      return render(request, 'myapp/viewpro.html', context)
+   return redirect('login')
+
+def editpro(request,k):
+   pass
+
+def deletepro(request,k):
+   pass
