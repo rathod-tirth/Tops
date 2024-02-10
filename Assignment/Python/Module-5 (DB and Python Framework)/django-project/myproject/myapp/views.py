@@ -85,4 +85,10 @@ def editpro(request,k):
    return redirect('login')
 
 def deletepro(request,k):
-   pass
+   if 'name' in request.session:
+      productmst=ProductMst.objects.get(product_id=k)
+      productmst.delete()
+      
+      return redirect('viewpro')
+   else:
+      return redirect('login')
