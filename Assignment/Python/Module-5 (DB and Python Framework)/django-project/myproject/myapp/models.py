@@ -19,7 +19,7 @@ class ProductMst(models.Model):
 class ProductSubCat(models.Model):
    product_name=models.ForeignKey(ProductMst, on_delete=models.CASCADE)
    product_price=models.CharField(max_length=10)
-   image = models.FileField(upload_to='upload/')
+   image = models.FileField(upload_to='upload', default='default.jpg', null=True)
    model = models.CharField(max_length=50)
    ram = models.CharField(max_length=20)
    
