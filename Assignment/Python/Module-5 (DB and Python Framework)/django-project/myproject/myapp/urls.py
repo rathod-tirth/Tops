@@ -21,4 +21,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('login/', views.login, name='login'),
     path('addpro/', views.addpro, name='addpro'),
+    path('viewpro/', views.viewpro, name='viewpro'),
+    path('editpro/<int:k>', views.editpro, name='editpro'),
+    path('deletepro/<int:k>', views.deletepro, name='deletepro'),
 ]
