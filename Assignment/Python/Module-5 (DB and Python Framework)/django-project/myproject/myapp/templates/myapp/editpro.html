@@ -1,0 +1,46 @@
+{% extends "myapp/index.html" %}
+
+{% block content %}
+<section>
+   <div class="container m-5">
+      <h2 class="mb-5">Edit Product</h2>
+      {% if msg %}
+      <div class="alert alert-success">
+         {{msg}}
+      </div>
+      {% endif %}
+      
+      <form method="post" action="{% url "editpro" k=productmst.product_id %}" enctype="multipart/form-data">
+         {% csrf_token %}
+         <!-- ***** Name ****** -->
+         <div class="form-group">
+            <label>Product Name : </label>
+            <input type="text" class="form-control" placeholder="Enter Product Name" name="product_name" value="{{productmst.product_name}}">
+         </div>
+         <!-- ***** Price ****** -->
+         <div class="form-group">
+            <label>Product Price : </label>
+            <input type="text" class="form-control" placeholder="Enter Product Price" name="product_price" value="{{productsubcat.product_price}}">
+         </div>
+         <!-- ***** Image ****** -->
+         <div class="form-group">
+            <label for="product_image">Product Image : </label>
+            <input type="file" class="form-control" name="image">
+         </div>
+         <!-- ***** Model ****** -->
+         <div class="form-group">
+            <label>Product Model : </label>
+            <input type="text" class="form-control" placeholder="Enter Product Model" name="model" value="{{productsubcat.model}}">
+         </div>
+         <!-- ***** Ram ****** -->
+         <div class="form-group">
+            <label>Product Ram : </label>
+            <input type="text" class="form-control" placeholder="Enter Product Ram" name="ram" value="{{productsubcat.ram}}">
+         </div>
+
+         <input type="submit" class="btn btn-primary text-white" value="Submit" />
+         <a class="btn btn-primary text-white" href="{% url 'viewpro' %}">Back</a>
+      </form>
+   </div>
+</section>
+{% endblock content %}

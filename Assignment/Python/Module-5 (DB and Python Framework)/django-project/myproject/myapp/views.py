@@ -62,7 +62,27 @@ def viewpro(request):
    return redirect('login')
 
 def editpro(request,k):
-   pass
+   if 'name' in request.session:
+      productmst=ProductMst.objects.get(product_id=k)
+      productsubcat=ProductSubCat.objects.get(product_name=productmst.product_id)
+      context={'productmst':productmst,
+               'productsubcat':productsubcat,}
+      
+      print("=========== Product :",productmst,productsubcat)
+      
+      if request.POST:
+         productmst.product_name=request.POST.get('product_name') or productmst.product_name
+         productsubcat.product_price=request.POST.get('product_price') or productsubcat.product_price
+         productsubcat.image=request.POST.get('image') or productsubcat.image
+         productsubcat.model=request.POST.get('model') or productsubcat.model
+         productsubcat.ram=request.POST.get('ram') or productsubcat.ram
+         
+         productmst.save()
+         productsubcat.save()
+         return redirect('viewpro')
+      
+      return render(request, 'myapp/editpro.html', context)
+   return redirect('login')
 
 def deletepro(request,k):
    pass
