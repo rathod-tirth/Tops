@@ -1,0 +1,44 @@
+{% extends "myapp/index.html" %}
+
+{% block content %}
+<section>
+   <div class="container m-5">
+      <!-- title -->
+      <h2 class="mb-5">View Book</h2>
+
+      <!-- table -->
+      <table class="table table-bordered table-hover">
+         <!-- table heading -->
+         <thead>
+            <tr>
+               <th>No.</th>
+               <th>Title</th>
+               <th>Author</th>
+               <th>Isbn</th>
+               <th>Publisher</th>
+               <th>Action</th>
+            </tr>
+         </thead>
+         <!-- table content -->
+         <tbody>
+            {% for i in bookdata %}
+            <tr>
+               <td>{{i.id}}</td>
+               <td>{{i.title}}</td>
+               <td>{{i.author}}</td>
+               <td>{{i.isbn}}</td>
+               <td>{{i.publisher}}</td>
+               <td>
+                  <a class="btn btn-danger text-white" href="{% url 'deletebook' k=i.id %}">Delete</a>
+               </td>
+            </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+      <!-- ================== -->
+
+      <!-- home button -->
+      <a class="btn btn-success text-white" href="{% url 'index' %}">Home</a>
+   </div>
+</section>
+{% endblock content %}
