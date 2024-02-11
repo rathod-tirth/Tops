@@ -19,4 +19,7 @@ from myapp import views
 
 urlpatterns = [
     path('',views.index,name='index'),
+    path('addbook/',views.addbook,name='addbook'),
+    path('deletebook/<int:k>',views.deletebook,name='deletebook'),
+    path('bookapi/',views.bookapi,name='bookapi'),
 ]
