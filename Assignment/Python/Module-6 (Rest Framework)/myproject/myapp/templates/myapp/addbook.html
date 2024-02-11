@@ -1,0 +1,45 @@
+{% extends "myapp/index.html" %}
+
+{% block content %}
+<section>
+   <div class="container m-5">
+      <!-- title -->
+      <h2 class="mb-5">Add Book</h2>
+
+      <!-- alert message -->
+      {% if msg %}
+      <div class="alert alert-success">
+         {{msg}}
+      </div>
+      {% endif %}
+
+      <!-- form -->
+      <form method="post" action="{% url 'bookapi' %}" enctype="multipart/form-data">
+         {% csrf_token %}
+         <!-- ***** Title ****** -->
+         <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter Title" name="title">
+         </div>
+         <!-- ***** Author ****** -->
+         <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter Author" name="author">
+         </div>
+         <!-- ***** isbn ****** -->
+         <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter Isbn" name="isbn">
+         </div>
+         <!-- ***** Publisher ****** -->
+         <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter Publisher" name="publisher">
+         </div>
+
+         <!-- ***** Buttons ***** -->
+         <div class="form-group mt-4">
+            <input type="submit" class="btn btn-primary text-white" value="Submit" />
+            <a class="btn btn-success text-white" href="{% url 'index' %}">Home</a>
+         </div>
+      </form>
+      <!-- ============ -->
+   </div>
+</section>
+{% endblock content %}
