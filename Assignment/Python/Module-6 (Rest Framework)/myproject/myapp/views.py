@@ -1,6 +1,9 @@
-from django.shortcuts import render, HttpResponse
-
+from django.shortcuts import render
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from .models import Book
+from .serializers import BookSerializer
 # Create your views here.
 
-def home(request):
-   return HttpResponse("<h2>Hello from django rest framework</h2>")
+def index(request):
+   return render(request,'myapp/index.html')
