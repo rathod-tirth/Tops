@@ -36,20 +36,3 @@ def bookapi(request):
    except Exception as e:
       print("============ Error :",e)
       return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-# @api_view(['GET', 'POST','PUT','DELETE'])
-# def studentgetdata(request):
-#     try:
-#         if request.method == 'GET':
-#             sdata = Student.objects.all()
-#             serializer = StudentSerializer(sdata, many=True)
-#             return Response(serializer.data, status=status.HTTP_200_OK)
-#         elif request.method == 'POST':  
-#             serializer = StudentSerializer(data = request.data)
-#             if serializer.is_valid():
-#                 serializer.save()
-#                 return Response(serializer.data, status=status.HTTP_201_CREATED)
-#             return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)  # Method Not Allowed for POST
-#     except Exception as e:
-#         print(f"An error occurred: {e}")
-#         return Response(status=status.HTTP_500_INTERNAL_SERVER_ERROR)
